@@ -52,6 +52,8 @@ function estimateTotalCost() {
     if (yes.checked) {
         under25Charges = Number((0.3) * (basePremium) * (days)).toPrecision(4);
         console.log(typeof under25Charges);
+        under25Charges = Number(under25Charges);
+        console.log(typeof under25Charges);
     }
 
     let carRental = basePremium * days;
